@@ -1,5 +1,4 @@
 import java.io.*;
-<<<<<<< HEAD
 
 public class EmployeeTest{
 
@@ -12,7 +11,7 @@ public class EmployeeTest{
 		long d = 1000000000;//正负最大9开头的19位数字
 		float f = 125.3f;//存储浮点数时可以节省内存空间，不能用来表示精确的值
 		double db = 1234.4;//双精度浮点型，不能用来表示精确的值
-		final dobule PI = 3.141592657;//定义常量PI
+		final double PI = 3.141592657;//定义常量PI
 
 		byte aa = 68;
 		char ab = 'A';// char表示2进制
@@ -41,24 +40,5 @@ public class EmployeeTest{
 		eTwo.printEmployee();
 
 	}
-=======
-public class EmployeeTest{
 
-   public static void main(String args[]){
-      /* 使用构造器创建两个对象 */
-      Employee empOne = new Employee("James Smith");
-      Employee empTwo = new Employee("Mary Anne");
-
-      // 调用这两个对象的成员方法
-      empOne.empAge(26);
-      empOne.empDesignation("Senior Software Engineer");
-      empOne.empSalary(1000);
-      empOne.printEmployee();
-
-      empTwo.empAge(21);
-      empTwo.empDesignation("Software Engineer");
-      empTwo.empSalary(500);
-      empTwo.printEmployee();
-   }
->>>>>>> 05f7edbc78f4b830982be7fba892873341aca810
 }
