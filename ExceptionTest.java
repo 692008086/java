@@ -1,13 +1,20 @@
-import java.io.*;
+
 public class ExceptionTest{
     public static void main(String[] args){
-        try{
 
-            int[] a = new int[2];
-            System.out.println("array 3:"+a[3]);
-        }catch(ArrayIndexOutOfBoundsException e){
-            System.out.println("Exception thrown  :" + e);
+        try
+        {
+          file = new FileInputStream(fileName);
+          x = (byte) file.read();
+        }catch(IOException i)
+        {
+          i.printStackTrace();
+          return -1;
+        }catch(FileNotFoundException f) //Not valid!
+        {
+          f.printStackTrace();
+          return -1;
         }
-        System.out.println("Out of the block");
+
     }
 }
